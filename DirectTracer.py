@@ -1,5 +1,15 @@
 import os
 import urllib.parse
+import time
+
+
+def print_with_loading(message, delay=0.005):
+
+    for char in message:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+
+    print("", flush=True)
 
 
 def save_directory_structure(root_dir, text_output_file, markdown_output_file, ignored_directories=None, ignored_extensions=None):
@@ -20,6 +30,8 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
         md_f.write("# Directory Structure\n\n")
 
         is_first_directory = True
+
+        print_with_loading("Reading directory structure...", 0.01)
 
         # Walk through the directory tree
         for root, dirs, files in os.walk(root_dir):
@@ -70,6 +82,8 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
                 md_f.write(
                     f"{'  ' * (depth + 1)}- [{file}]({encoded_file_path})\n")
 
+        print_with_loading("\n🌲 Directory structure read successfully.", 0.02)
+
 
 def main():
     current_directory = os.getcwd()
@@ -78,11 +92,14 @@ def main():
     ignored_directories = [".git", ".vscode", "venv", ".idea", "out"]
     ignored_extensions = [".exe"]
 
+    print_with_loading("Saving directory structure...", 0.01)
+
     save_directory_structure(
         current_directory, text_output_file, markdown_output_file, ignored_directories, ignored_extensions)
 
-    print(f"✅ Directory structure saved to {text_output_file}")
-    print(f"✅ Directory structure saved as Markdown to {markdown_output_file}")
+    print_with_loading(f"\n📄 Directory structure saved to {text_output_file}")
+    print_with_loading(
+        f"📄 Directory structure saved as Markdown to {markdown_output_file}")
 
 
 if __name__ == "__main__":
