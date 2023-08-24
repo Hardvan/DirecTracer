@@ -19,6 +19,8 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
         # Write the Markdown header
         md_f.write("# Directory Structure\n\n")
 
+        is_first_directory = True
+
         # Walk through the directory tree
         for root, dirs, files in os.walk(root_dir):
 
@@ -32,9 +34,16 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
             indentation = "\t" * depth
 
             # Write folder information to both text and Markdown files
-            text_f.write(f"{indentation}📂 {os.path.basename(root)}\n")
-            md_f.write(
-                f"{'  ' * depth}- 📂 **{os.path.basename(root)}**\n")
+            if is_first_directory:
+                text_f.write(
+                    f"{indentation}📂 {os.path.basename(root)} (Current Directory)\n")
+                md_f.write(
+                    f"{'  ' * depth}- 📂 **{os.path.basename(root)} (Current Directory)**\n")
+                is_first_directory = False
+            else:
+                text_f.write(f"{indentation}📂 {os.path.basename(root)}\n")
+                md_f.write(f"{'  ' * depth}- 📂 **{os.path.basename(root)}**\n")
+
             print(f"✅ Read {relative_path} contents")
 
             # Loop through the files in the current directory

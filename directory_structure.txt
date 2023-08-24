@@ -1,9 +1,10 @@
-📂 DirecTracer
+📂 DirecTracer (Current Directory)
   - .gitignore
   - directory_structure.md
   - directory_structure.txt
   - DirectTracer.py
   - generate_sample_structure.py
+  - README.md
 📂 SampleDirectory
 	📂 FolderA
 	  - File1.txt

@@ -1,11 +1,12 @@
 # Directory Structure
 
-- 📂 **DirecTracer**
+- 📂 **DirecTracer (Current Directory)**
   - [.gitignore](./.gitignore)
   - [directory_structure.md](./directory_structure.md)
   - [directory_structure.txt](./directory_structure.txt)
   - [DirectTracer.py](./DirectTracer.py)
   - [generate_sample_structure.py](./generate_sample_structure.py)
+  - [README.md](./README.md)
 - 📂 **SampleDirectory**
   - 📂 **FolderA**
     - [File1.txt](SampleDirectory/FolderA/File1.txt)
