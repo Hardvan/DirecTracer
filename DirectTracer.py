@@ -92,14 +92,12 @@ def main():
     ignored_directories = [".git", ".vscode", "venv", ".idea", "out"]
     ignored_extensions = [".exe"]
 
-    print_with_loading("Saving directory structure...", 0.01)
-
     save_directory_structure(
         current_directory, text_output_file, markdown_output_file, ignored_directories, ignored_extensions)
 
-    print_with_loading(f"\n📄 Directory structure saved to {text_output_file}")
-    print_with_loading(
-        f"📄 Directory structure saved as Markdown to {markdown_output_file}")
+    print_with_loading("\nDirectory structure saved to")
+    print_with_loading(f"\n📄 {text_output_file}")
+    print_with_loading(f"📄 {markdown_output_file}")
 
 
 if __name__ == "__main__":
