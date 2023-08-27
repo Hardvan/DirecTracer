@@ -8,6 +8,13 @@ DirecTracer is a Python script that generates a directory structure in both text
 - Supports ignoring specific directories and file extensions.
 - Outputs clickable links in the Markdown file for easy navigation.
 
+## Demonstration Video
+
+<video controls>
+  <source src="./Demo_Video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Usage
 
 1. Ensure you have Python installed on your system.
