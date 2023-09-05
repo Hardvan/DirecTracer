@@ -1,10 +1,12 @@
 📂 DirecTracer (Current Directory)
   - .gitignore
+  - Demo_Video.mp4
   - directory_structure.md
   - directory_structure.txt
   - DirectTracer.py
   - generate_sample_structure.py
   - README.md
+  - thumbnail.png
 📂 SampleDirectory
 	📂 FolderA
 	  - File1.txt

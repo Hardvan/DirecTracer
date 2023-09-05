@@ -2,11 +2,13 @@
 
 - 📂 **DirecTracer (Current Directory)**
   - [.gitignore](./.gitignore)
+  - [Demo_Video.mp4](./Demo_Video.mp4)
   - [directory_structure.md](./directory_structure.md)
   - [directory_structure.txt](./directory_structure.txt)
   - [DirectTracer.py](./DirectTracer.py)
   - [generate_sample_structure.py](./generate_sample_structure.py)
   - [README.md](./README.md)
+  - [thumbnail.png](./thumbnail.png)
 - 📂 **SampleDirectory**
   - 📂 **FolderA**
     - [File1.txt](SampleDirectory/FolderA/File1.txt)

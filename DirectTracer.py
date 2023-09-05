@@ -4,6 +4,12 @@ import time
 
 
 def print_with_loading(message, delay=0.005):
+    """ Print a message with a loading animation.
+
+    Args:
+        message (str): The message to print.
+        delay (float, optional): The delay between each character. Defaults to 0.005.
+    """
 
     for char in message:
         print(char, end='', flush=True)
@@ -33,6 +39,10 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
 
         print_with_loading("Reading directory structure...", 0.01)
 
+        # Result parameters
+        total_folders = 0
+        total_files = 0
+
         # Walk through the directory tree
         for root, dirs, files in os.walk(root_dir):
 
@@ -58,6 +68,9 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
 
             print(f"✅ Read {relative_path} contents")
 
+            # Update the folder count
+            total_folders += 1
+
             # Loop through the files in the current directory
             for file in files:
 
@@ -82,7 +95,12 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
                 md_f.write(
                     f"{'  ' * (depth + 1)}- [{file}]({encoded_file_path})\n")
 
-        print_with_loading("\n🌲 Directory structure read successfully.", 0.02)
+                # Update the file count
+                total_files += 1
+
+        print_with_loading("\n🌲 Directory structure read successfully.")
+        print_with_loading(f"Total folders: {total_folders}")
+        print_with_loading(f"Total files: {total_files}", 0.02)
 
 
 def main():
