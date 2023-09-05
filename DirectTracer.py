@@ -113,9 +113,9 @@ def main():
     save_directory_structure(
         current_directory, text_output_file, markdown_output_file, ignored_directories, ignored_extensions)
 
-    print_with_loading("\nDirectory structure saved to")
-    print_with_loading(f"\n📄 {text_output_file}")
-    print_with_loading(f"📄 {markdown_output_file}")
+    print_with_loading("\nDirectory structure saved to:")
+    print_with_loading(f"📄 {text_output_file}")
+    print_with_loading(f"📘 {markdown_output_file}")
 
 
 if __name__ == "__main__":
