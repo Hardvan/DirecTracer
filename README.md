@@ -12,7 +12,7 @@ DirecTracer is a Python script that generates a directory structure in both text
 
 Click on the thumbnail below to watch the demonstration video on YouTube.
 
-[![DirecTracer](./thumbnail.png)](https://youtu.be/FqMauKiTvVs?si=FJlBiQBwpZb7_IPm)
+[![DirecTracer](./thumbnail2.png)](https://youtu.be/FqMauKiTvVs?si=FJlBiQBwpZb7_IPm)
 
 ## Usage
 
