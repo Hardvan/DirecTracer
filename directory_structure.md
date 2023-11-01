@@ -1,5 +1,12 @@
 # Directory Structure
 
+Format:
+
+```md
+📂 Directory
+  - File
+```
+
 - 📂 **DirecTracer (Current Directory)**
   - [.gitignore](./.gitignore)
   - [Demo_Video.mp4](./Demo_Video.mp4)
@@ -9,6 +16,7 @@
   - [generate_sample_structure.py](./generate_sample_structure.py)
   - [README.md](./README.md)
   - [thumbnail.png](./thumbnail.png)
+  - [thumbnail2.png](./thumbnail2.png)
 - 📂 **SampleDirectory**
   - 📂 **FolderA**
     - [File1.txt](SampleDirectory/FolderA/File1.txt)

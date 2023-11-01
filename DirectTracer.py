@@ -18,7 +18,8 @@ def print_with_loading(message, delay=0.005):
     print("", flush=True)
 
 
-def save_directory_structure(root_dir, text_output_file, markdown_output_file, ignored_directories=None, ignored_extensions=None):
+def save_directory_structure(root_dir, text_output_file, markdown_output_file,
+                             ignored_directories=None, ignored_extensions=None, animation=False):
     """
     Save the directory structure to text and Markdown files.
 
@@ -35,9 +36,16 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
         # Write the Markdown header
         md_f.write("# Directory Structure\n\n")
 
+        # Write the format template
+        md_f.write("Format:\n\n")
+        md_f.write("```md\n")
+        md_f.write("📂 Directory\n")
+        md_f.write("  - File\n")
+        md_f.write("```\n\n")
+
         is_first_directory = True
 
-        print_with_loading("Reading directory structure...", 0.01)
+        print("Reading directory structure...")
 
         # Result parameters
         total_folders = 0
@@ -98,12 +106,20 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file, i
                 # Update the file count
                 total_files += 1
 
-        print_with_loading("\n🌲 Directory structure read successfully.")
-        print_with_loading(f"Total folders: {total_folders}")
-        print_with_loading(f"Total files: {total_files}", 0.02)
+        if animation:
+            print_with_loading("\n🌲 Directory structure read successfully.")
+            print_with_loading(f"Total folders: {total_folders}")
+            print_with_loading(f"Total files: {total_files}", 0.02)
+        else:
+            print("\n🌲 Directory structure read successfully.")
+            print(f"Total folders: {total_folders}")
+            print(f"Total files: {total_files}")
 
 
 def main():
+
+    animation = True  # ? Toggle this to enable/disable the loading animation
+
     current_directory = os.getcwd()
     text_output_file = "directory_structure.txt"
     markdown_output_file = "directory_structure.md"
@@ -111,11 +127,16 @@ def main():
     ignored_extensions = [".exe"]
 
     save_directory_structure(
-        current_directory, text_output_file, markdown_output_file, ignored_directories, ignored_extensions)
+        current_directory, text_output_file, markdown_output_file, ignored_directories, ignored_extensions, animation)
 
-    print_with_loading("\nDirectory structure saved to:")
-    print_with_loading(f"📄 {text_output_file}")
-    print_with_loading(f"📘 {markdown_output_file}")
+    if animation:
+        print_with_loading("\nDirectory structure saved to:")
+        print_with_loading(f"📄 {text_output_file}")
+        print_with_loading(f"📘 {markdown_output_file}")
+    else:
+        print("\nDirectory structure saved to:")
+        print(f"📄 {text_output_file}")
+        print(f"📘 {markdown_output_file}")
 
 
 if __name__ == "__main__":
