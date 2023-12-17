@@ -61,6 +61,8 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file,
             # Get the relative path and indentation level
             relative_path = os.path.relpath(root, root_dir)
             depth = relative_path.count(os.path.sep)
+            if not is_first_directory:
+                depth += 1
             indentation = "\t" * depth
 
             # Write folder information to both text and Markdown files
@@ -68,7 +70,7 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file,
                 text_f.write(
                     f"{indentation}📂 {os.path.basename(root)} (Current Directory)\n")
                 md_f.write(
-                    f"{'  ' * depth}- 📂 **{os.path.basename(root)} (Current Directory)**\n")
+                    f"{' ' * depth}- 📂 **{os.path.basename(root)} (Current Directory)**\n")
                 is_first_directory = False
             else:
                 text_f.write(f"{indentation}📂 {os.path.basename(root)}\n")

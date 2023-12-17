@@ -17,25 +17,25 @@ Format:
   - [README.md](./README.md)
   - [thumbnail.png](./thumbnail.png)
   - [thumbnail2.png](./thumbnail2.png)
-- 📂 **SampleDirectory**
-  - 📂 **FolderA**
-    - [File1.txt](SampleDirectory/FolderA/File1.txt)
-    - [File2.txt](SampleDirectory/FolderA/File2.txt)
-    - [File3.txt](SampleDirectory/FolderA/File3.txt)
-    - 📂 **Subfolder1**
-    - 📂 **Subfolder2**
-    - 📂 **Subfolder3**
-  - 📂 **FolderB**
-    - [File1.txt](SampleDirectory/FolderB/File1.txt)
-    - [File2.txt](SampleDirectory/FolderB/File2.txt)
-    - [File3.txt](SampleDirectory/FolderB/File3.txt)
-    - 📂 **Subfolder1**
-    - 📂 **Subfolder2**
-    - 📂 **Subfolder3**
-  - 📂 **FolderC**
-    - [File1.txt](SampleDirectory/FolderC/File1.txt)
-    - [File2.txt](SampleDirectory/FolderC/File2.txt)
-    - [File3.txt](SampleDirectory/FolderC/File3.txt)
-    - 📂 **Subfolder1**
-    - 📂 **Subfolder2**
-    - 📂 **Subfolder3**
+  - 📂 **SampleDirectory**
+    - 📂 **FolderA**
+      - [File1.txt](SampleDirectory/FolderA/File1.txt)
+      - [File2.txt](SampleDirectory/FolderA/File2.txt)
+      - [File3.txt](SampleDirectory/FolderA/File3.txt)
+      - 📂 **Subfolder1**
+      - 📂 **Subfolder2**
+      - 📂 **Subfolder3**
+    - 📂 **FolderB**
+      - [File1.txt](SampleDirectory/FolderB/File1.txt)
+      - [File2.txt](SampleDirectory/FolderB/File2.txt)
+      - [File3.txt](SampleDirectory/FolderB/File3.txt)
+      - 📂 **Subfolder1**
+      - 📂 **Subfolder2**
+      - 📂 **Subfolder3**
+    - 📂 **FolderC**
+      - [File1.txt](SampleDirectory/FolderC/File1.txt)
+      - [File2.txt](SampleDirectory/FolderC/File2.txt)
+      - [File3.txt](SampleDirectory/FolderC/File3.txt)
+      - 📂 **Subfolder1**
+      - 📂 **Subfolder2**
+      - 📂 **Subfolder3**
