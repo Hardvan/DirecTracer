@@ -131,11 +131,7 @@ def save_directory_structure(root_dir=os.getcwd(),
         print(f"📘 {markdown_output_file}")
 
 
-def main():
+if __name__ == "__main__":
 
     # ? animation = True/False: Enable/Disable the loading animation
     save_directory_structure(root_dir=os.getcwd(), animation=True)
-
-
-if __name__ == "__main__":
-    main()
