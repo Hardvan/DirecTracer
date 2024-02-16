@@ -1,0 +1,49 @@
+# DirecTracer
+
+DirecTracer is a Python script that generates a directory structure in both text and Markdown formats. It can be used to visualize the hierarchy of folders and files in a given directory, while also excluding specific folders and file extensions.
+
+## Features
+
+- Generates a directory structure in text and Markdown formats.
+- Supports ignoring specific directories and file extensions.
+- Outputs clickable links in the Markdown file for easy navigation.
+
+## Usage
+
+1. Ensure you have Python installed on your system.
+
+2. Clone this repository or download the `DirecTracer.py` file.
+
+   ```bash
+   git clone https://github.com/Hardvan/DirecTracer
+   cd DirecTracer
+   ```
+
+3. Run the script with the following command:
+
+   ```bash
+   python DirecTracer.py
+   ```
+
+4. Once the script completes, you'll find the generated text and Markdown files in the same directory.
+
+To call the function `save_directory_structure` from another Python script, you can use the following code:
+
+```python
+from DirecTracer import save_directory_structure
+
+save_directory_structure(
+    directory="path/to/directory",
+    ignore_dirs=["dir1", "dir2"],
+    ignore_exts=[".ext1", ".ext2"],
+)
+```
+
+It has the following arguments:
+
+- **root_dir (str):** The root directory to start scanning from.
+- **text_output_file (str):** The name of the text output file.
+- **markdown_output_file (str):** The name of the Markdown output file.
+- **ignored_directories (list, optional):** List of directories to ignore. Defaults to None.
+- **ignored_extensions (list, optional):** List of file extensions to ignore. Defaults to None.
+- **animation (bool, optional):** Enable/Disable the loading animation. Defaults to False.

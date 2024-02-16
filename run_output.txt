@@ -1,0 +1,67 @@
+📂 DirecTracer (Current Directory)
+  - .gitignore
+  - directory_structure.md
+  - directory_structure.txt
+  - LICENSE.txt
+  - README.md
+  - requirements.txt
+  - run.py
+  - run_output.md
+  - run_output.txt
+  - setup.py
+📂 app
+  - README.md
+  - __init__.py
+	📂 DirecTracer
+	  - __init__.py
+		📂 src
+		  - DirectTracer.py
+		  - __init__.py
+		📂 test
+		  - generate_sample_structure.py
+		  - __init__.py
+	📂 DirecTracer.egg-info
+	  - dependency_links.txt
+	  - PKG-INFO
+	  - SOURCES.txt
+	  - top_level.txt
+📂 build
+	📂 bdist.win-amd64
+	📂 lib
+		📂 DirecTracer
+		  - __init__.py
+			📂 src
+			  - DirectTracer.py
+			  - __init__.py
+			📂 test
+			  - generate_sample_structure.py
+			  - __init__.py
+📂 demo
+  - Demo_Video.mp4
+  - thumbnail.png
+  - thumbnail2.png
+📂 dist
+  - DirecTracer-1.0.0-py3-none-any.whl
+  - DirecTracer-1.0.0.tar.gz
+📂 SampleDirectory
+	📂 FolderA
+	  - File1.txt
+	  - File2.txt
+	  - File3.txt
+		📂 Subfolder1
+		📂 Subfolder2
+		📂 Subfolder3
+	📂 FolderB
+	  - File1.txt
+	  - File2.txt
+	  - File3.txt
+		📂 Subfolder1
+		📂 Subfolder2
+		📂 Subfolder3
+	📂 FolderC
+	  - File1.txt
+	  - File2.txt
+	  - File3.txt
+		📂 Subfolder1
+		📂 Subfolder2
+		📂 Subfolder3
