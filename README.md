@@ -16,25 +16,46 @@ Click on the thumbnail below to watch the demonstration video on YouTube.
 
 ## Usage
 
-1. Ensure you have Python installed on your system.
+Clone this repository using the following command:
 
-2. Clone this repository or download the `DirecTracer.py` file.
+```bash
+git clone https://github.com/Hardvan/DirecTracer
+cd DirecTracer
+pip install .
+```
 
-3. Modify the `main` function in `DirecTracer.py` to set your preferred configuration options:
+OR
 
-   - `current_directory`: The root directory you want to generate the structure for.
-   - `text_output_file`: The name of the text output file.
-   - `markdown_output_file`: The name of the Markdown output file.
-   - `ignored_directories`: List of directories to ignore.
-   - `ignored_extensions`: List of file extensions to ignore.
+Install the DirecTracer package using the following command:
 
-4. Run the script using the following command:
+```bash
+pip install DirecTracer
+```
 
-   ```bash
-   python DirecTracer.py
-   ```
+Call the `save_directory_structure` function from the `DirecTracer` module to generate the directory structure.
 
-5. Once the script completes, you'll find the generated text and Markdown files in the same directory.
+```python
+from DirecTracer import save_directory_structure
+import os
+
+
+# Generate the directory structure in text and Markdown formats
+save_directory_structure(
+   root_dir=os.getcwd(),
+   text_output_file="directory_structure.txt",
+   markdown_output_file="directory_structure.md",
+   animation=True
+)
+```
+
+The function accepts the following parameters:
+
+- **root_dir (str):** The root directory to start scanning from.
+- **text_output_file (str):** The name of the text output file.
+- **markdown_output_file (str):** The name of the Markdown output file.
+- **ignored_directories (list, optional):** List of directories to ignore. Defaults to None.
+- **ignored_extensions (list, optional):** List of file extensions to ignore. Defaults to None.
+- **animation (bool, optional):** Enable/Disable the loading animation. Defaults to False.
 
 ## Output Example
 
