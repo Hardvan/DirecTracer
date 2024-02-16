@@ -34,6 +34,7 @@ def save_directory_structure(root_dir=os.getcwd(),
         markdown_output_file (str): The name of the Markdown output file.
         ignored_directories (list, optional): List of directories to ignore. Defaults to None.
         ignored_extensions (list, optional): List of file extensions to ignore. Defaults to None.
+        animation (bool, optional): Enable/Disable the loading animation. Defaults to False.
     """
 
     with open(text_output_file, 'w', encoding='utf-8') as text_f, open(markdown_output_file, 'w', encoding='utf-8') as md_f:
