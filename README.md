@@ -69,5 +69,6 @@ To have a look at the current directory structure of this repository, check out 
 
    ```bash
    python setup.py bdist_wheel sdist
+   twine check dist/*
    twine upload dist/*
    ```
