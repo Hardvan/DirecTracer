@@ -49,6 +49,8 @@ save_directory_structure(
 )
 ```
 
+View the [`run.py`](./run.py) file for a complete example.
+
 The function accepts the following parameters:
 
 - **root_dir (str):** The root directory to start scanning from.
