@@ -10,3 +10,4 @@ app/DirecTracer/src/DirectTracer.py
 app/DirecTracer/src/__init__.py
 app/DirecTracer/test/__init__.py
 app/DirecTracer/test/generate_sample_structure.py
+app/DirecTracer/test/test_DirecTracer.py

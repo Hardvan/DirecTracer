@@ -1,7 +1,7 @@
 import os
 
 
-def generate_sample_directory_structure(root_dir):
+def generate_sample_directory_structure(root_dir="SampleDirectory"):
 
     os.makedirs(root_dir, exist_ok=True)
 
@@ -22,9 +22,9 @@ def generate_sample_directory_structure(root_dir):
             with open(file_path, 'w') as f:
                 f.write("This is a sample file.")
 
+    print("✅ Sample directory structure generated.")
+
 
 if __name__ == "__main__":
 
-    sample_root_directory = "SampleDirectory"
-    generate_sample_directory_structure(sample_root_directory)
-    print("✅ Sample directory structure generated.")
+    generate_sample_directory_structure()

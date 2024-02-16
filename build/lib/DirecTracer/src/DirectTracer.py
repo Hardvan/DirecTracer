@@ -14,7 +14,6 @@ def print_with_loading(message, delay=0.005):
     for char in message:
         print(char, end='', flush=True)
         time.sleep(delay)
-
     print("", flush=True)
 
 
@@ -49,7 +48,7 @@ def save_directory_structure(root_dir=os.getcwd(),
         md_f.write("  - File\n")
         md_f.write("```\n\n")
 
-        is_first_directory = True
+        is_first_directory = True  # Flag to check if the current directory is the first one
 
         print("Reading directory structure...")
 
@@ -134,9 +133,8 @@ def save_directory_structure(root_dir=os.getcwd(),
 
 def main():
 
-    save_directory_structure(root_dir=os.getcwd(), animation=True)
-
     # ? animation = True/False: Enable/Disable the loading animation
+    save_directory_structure(root_dir=os.getcwd(), animation=True)
 
 
 if __name__ == "__main__":

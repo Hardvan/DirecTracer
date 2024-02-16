@@ -61,3 +61,13 @@ The function accepts the following parameters:
 ## Output Example
 
 To have a look at the current directory structure of this repository, check out the [directory_structure.md](./directory_structure.md) file.
+
+## Run the following commands to update the package
+
+1. Change version in `setup.py`
+2. Run the following commands
+
+   ```bash
+   python setup.py bdist_wheel sdist
+   twine upload dist/*
+   ```
