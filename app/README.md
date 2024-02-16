@@ -10,36 +10,39 @@ DirecTracer is a Python script that generates a directory structure in both text
 
 ## Usage
 
-1. Ensure you have Python installed on your system.
+Clone this repository using the following command:
 
-2. Clone this repository or download the `DirecTracer.py` file.
+```bash
+git clone https://github.com/Hardvan/DirecTracer
+cd DirecTracer
+pip install .
+```
 
-   ```bash
-   git clone https://github.com/Hardvan/DirecTracer
-   cd DirecTracer
-   ```
+OR
 
-3. Run the script with the following command:
+Install the DirecTracer package using the following command:
 
-   ```bash
-   python DirecTracer.py
-   ```
+```bash
+pip install DirecTracer
+```
 
-4. Once the script completes, you'll find the generated text and Markdown files in the same directory.
-
-To call the function `save_directory_structure` from another Python script, you can use the following code:
+Call the `save_directory_structure` function from the `DirecTracer` module to generate the directory structure.
 
 ```python
 from DirecTracer import save_directory_structure
+import os
 
+
+# Generate the directory structure in text and Markdown formats
 save_directory_structure(
-    directory="path/to/directory",
-    ignore_dirs=["dir1", "dir2"],
-    ignore_exts=[".ext1", ".ext2"],
+   root_dir=os.getcwd(),
+   text_output_file="directory_structure.txt",
+   markdown_output_file="directory_structure.md",
+   animation=True
 )
 ```
 
-It has the following arguments:
+The function accepts the following parameters:
 
 - **root_dir (str):** The root directory to start scanning from.
 - **text_output_file (str):** The name of the text output file.
