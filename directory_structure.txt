@@ -8,25 +8,25 @@
   - README.md
   - thumbnail.png
   - thumbnail2.png
-	📂 SampleDirectory
-		📂 FolderA
-		  - File1.txt
-		  - File2.txt
-		  - File3.txt
-			📂 Subfolder1
-			📂 Subfolder2
-			📂 Subfolder3
-		📂 FolderB
-		  - File1.txt
-		  - File2.txt
-		  - File3.txt
-			📂 Subfolder1
-			📂 Subfolder2
-			📂 Subfolder3
-		📂 FolderC
-		  - File1.txt
-		  - File2.txt
-		  - File3.txt
-			📂 Subfolder1
-			📂 Subfolder2
-			📂 Subfolder3
+📂 SampleDirectory
+	📂 FolderA
+	  - File1.txt
+	  - File2.txt
+	  - File3.txt
+		📂 Subfolder1
+		📂 Subfolder2
+		📂 Subfolder3
+	📂 FolderB
+	  - File1.txt
+	  - File2.txt
+	  - File3.txt
+		📂 Subfolder1
+		📂 Subfolder2
+		📂 Subfolder3
+	📂 FolderC
+	  - File1.txt
+	  - File2.txt
+	  - File3.txt
+		📂 Subfolder1
+		📂 Subfolder2
+		📂 Subfolder3
