@@ -18,8 +18,11 @@ def print_with_loading(message, delay=0.005):
     print("", flush=True)
 
 
-def save_directory_structure(root_dir, text_output_file, markdown_output_file,
-                             ignored_directories=None, ignored_extensions=None, animation=False):
+def save_directory_structure(root_dir, text_output_file="directory_structure.txt",
+                             markdown_output_file="directory_structure.md",
+                             ignored_directories=[
+                                 ".git", ".vscode", "venv", ".idea", "out"],
+                             ignored_extensions=[".exe"], animation=False):
     """
     Save the directory structure to text and Markdown files.
 
@@ -115,20 +118,7 @@ def save_directory_structure(root_dir, text_output_file, markdown_output_file,
             print(f"Total folders: {total_folders}")
             print(f"Total files: {total_files}")
 
-
-def main():
-
-    animation = True  # ? Change this to True to enable the loading animation
-
-    current_directory = os.getcwd()
-    text_output_file = "directory_structure.txt"
-    markdown_output_file = "directory_structure.md"
-    ignored_directories = [".git", ".vscode", "venv", ".idea", "out"]
-    ignored_extensions = [".exe"]
-
-    save_directory_structure(
-        current_directory, text_output_file, markdown_output_file, ignored_directories, ignored_extensions, animation)
-
+    # Print the output file paths
     if animation:
         print_with_loading("\nDirectory structure saved to:")
         print_with_loading(f"📄 {text_output_file}")
@@ -137,6 +127,12 @@ def main():
         print("\nDirectory structure saved to:")
         print(f"📄 {text_output_file}")
         print(f"📘 {markdown_output_file}")
+
+
+def main():
+
+    # ? Change animation to True to enable the loading animation
+    save_directory_structure(os.getcwd(), animation=True)
 
 
 if __name__ == "__main__":
