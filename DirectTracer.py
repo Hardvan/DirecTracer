@@ -18,11 +18,13 @@ def print_with_loading(message, delay=0.005):
     print("", flush=True)
 
 
-def save_directory_structure(root_dir, text_output_file="directory_structure.txt",
+def save_directory_structure(root_dir=os.getcwd(),
+                             text_output_file="directory_structure.txt",
                              markdown_output_file="directory_structure.md",
                              ignored_directories=[
                                  ".git", ".vscode", "venv", ".idea", "out"],
-                             ignored_extensions=[".exe"], animation=False):
+                             ignored_extensions=[".exe"],
+                             animation=False):
     """
     Save the directory structure to text and Markdown files.
 
@@ -131,8 +133,9 @@ def save_directory_structure(root_dir, text_output_file="directory_structure.txt
 
 def main():
 
-    # ? Change animation to True to enable the loading animation
-    save_directory_structure(os.getcwd(), animation=True)
+    save_directory_structure(root_dir=os.getcwd(), animation=True)
+
+    # ? animation = True/False: Enable/Disable the loading animation
 
 
 if __name__ == "__main__":
