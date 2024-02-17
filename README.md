@@ -2,6 +2,10 @@
 
 DirecTracer is a Python script that generates a directory structure in both text and Markdown formats. It can be used to visualize the hierarchy of folders and files in a given directory, while also excluding specific folders and file extensions.
 
+## DirecTracer on PyPI
+
+View the DirecTracer package on PyPI by clicking [here](https://pypi.org/project/DirecTracer/).
+
 ## Features
 
 - Generates a directory structure in text and Markdown formats.
