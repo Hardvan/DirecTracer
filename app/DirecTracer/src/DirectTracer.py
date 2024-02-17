@@ -21,18 +21,18 @@ def save_directory_structure(root_dir=os.getcwd(),
                              text_output_file="directory_structure.txt",
                              markdown_output_file="directory_structure.md",
                              ignored_directories=[
-                                 ".git", ".vscode", "venv", ".idea", "out"],
+                                 ".git", ".vscode", "venv", ".venv", ".idea", "out"],
                              ignored_extensions=[".exe"],
                              animation=False):
     """
     Save the directory structure to text and Markdown files.
 
     Args:
-        root_dir (str): The root directory to start scanning from.
-        text_output_file (str): The name of the text output file.
-        markdown_output_file (str): The name of the Markdown output file.
-        ignored_directories (list, optional): List of directories to ignore. Defaults to None.
-        ignored_extensions (list, optional): List of file extensions to ignore. Defaults to None.
+        root_dir (str): The root directory to start scanning from. Defaults to the current working directory.
+        text_output_file (str): The name of the text output file. Defaults to "directory_structure.txt".
+        markdown_output_file (str): The name of the Markdown output file. Defaults to "directory_structure.md".
+        ignored_directories (list, optional): List of directories to ignore. Defaults to [".git", ".vscode", "venv", ".venv", ".idea", "out"].
+        ignored_extensions (list, optional): List of file extensions to ignore. Defaults to [".exe"].
         animation (bool, optional): Enable/Disable the loading animation. Defaults to False.
     """
 

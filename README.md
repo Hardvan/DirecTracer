@@ -21,20 +21,20 @@ Click on the thumbnail below to watch the demonstration video on YouTube.
 
 ## Usage
 
+Install the DirecTracer package using the following command:
+
+```bash
+pip install DirecTracer
+```
+
+OR
+
 Clone this repository using the following command:
 
 ```bash
 git clone https://github.com/Hardvan/DirecTracer
 cd DirecTracer
 pip install .
-```
-
-OR
-
-Install the DirecTracer package using the following command:
-
-```bash
-pip install DirecTracer
 ```
 
 Call the `save_directory_structure` function from the `DirecTracer` module to generate the directory structure.
@@ -57,18 +57,18 @@ View the [`run.py`](./run.py) file for a complete example.
 
 The function accepts the following parameters:
 
-- **root_dir (str):** The root directory to start scanning from.
-- **text_output_file (str):** The name of the text output file.
-- **markdown_output_file (str):** The name of the Markdown output file.
-- **ignored_directories (list, optional):** List of directories to ignore. Defaults to None.
-- **ignored_extensions (list, optional):** List of file extensions to ignore. Defaults to None.
+- **root_dir (str):** The root directory to start scanning from. Defaults to the current working directory.
+- **text_output_file (str):** The name of the text output file. Defaults to "directory_structure.txt".
+- **markdown_output_file (str):** The name of the Markdown output file. Defaults to "directory_structure.md".
+- **ignored_directories (list, optional):** List of directories to ignore. Defaults to [".git", ".vscode", "venv", ".venv", ".idea", "out"].
+- **ignored_extensions (list, optional):** List of file extensions to ignore. Defaults to [".exe"].
 - **animation (bool, optional):** Enable/Disable the loading animation. Defaults to False.
 
 ## Output Example
 
 To have a look at the current directory structure of this repository, check out the [directory_structure.md](./directory_structure.md) file.
 
-## Run the following commands to update the package
+## Run the following commands to update the package (for maintainers)
 
 1. Change version in `setup.py`
 2. Run the following commands
@@ -78,3 +78,11 @@ To have a look at the current directory structure of this repository, check out 
    twine check dist/*
    twine upload dist/*
    ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE.txt) file for details.
+
+## Author
+
+**Hardik Pawar** - [Hardvan](https://github.com/Hardvan)
