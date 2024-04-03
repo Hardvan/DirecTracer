@@ -5,7 +5,7 @@ with open("app/README.md", "r") as f:
 
 setup(
     name="DirecTracer",
-    version="1.0.4",
+    version="1.0.5",
     author="Hardik Pawar",
     author_email="hardikpawarh@gmail.com",
     description="DirecTracer is a Python script that generates a directory structure in both text and Markdown formats. It can be used to visualize the hierarchy of folders and files in a given directory, while also excluding specific folders and file extensions.",
