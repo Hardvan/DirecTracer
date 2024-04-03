@@ -158,7 +158,9 @@ def generate_markdown_table(root_dir=os.getcwd(), markdown_output_file="markdown
         md_f.write("| 1 | [Capitalized Name Of File](Relative File Path) |\n")
         md_f.write("```\n\n")
 
-        is_first_directory = True  # Flag to check if the current directory is the first one
+        # Write "#", "File Name" headers
+        md_f.write("| # | File Name |\n")
+        md_f.write("|---|-----------|\n")
 
         print("Reading directory structure...")
 

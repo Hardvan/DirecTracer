@@ -93,6 +93,12 @@ To have a look at the current directory structure of this repository, check out 
    twine upload dist/*
    ```
 
+   In case you forget to update the version in `setup.py`:
+
+   - delete the `dist` folder
+   - update version in `setup.py`
+   - run the above commands again.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE.txt) file for details.
