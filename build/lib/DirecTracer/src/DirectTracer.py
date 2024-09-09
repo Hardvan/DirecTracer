@@ -3,7 +3,7 @@ import urllib.parse
 import time
 
 
-def print_with_loading(message, delay=0.005):
+def _print_with_loading(message, delay=0.005):
     """ Print a message with a loading animation.
 
     Args:
@@ -112,9 +112,9 @@ def save_directory_structure(root_dir=os.getcwd(),
                 total_files += 1
 
         if animation:
-            print_with_loading("\n🌲 Directory structure read successfully.")
-            print_with_loading(f"Total folders: {total_folders}")
-            print_with_loading(f"Total files: {total_files}", 0.02)
+            _print_with_loading("\n🌲 Directory structure read successfully.")
+            _print_with_loading(f"Total folders: {total_folders}")
+            _print_with_loading(f"Total files: {total_files}", 0.02)
         else:
             print("\n🌲 Directory structure read successfully.")
             print(f"Total folders: {total_folders}")
@@ -122,9 +122,9 @@ def save_directory_structure(root_dir=os.getcwd(),
 
     # Print the output file paths
     if animation:
-        print_with_loading("\nDirectory structure saved to:")
-        print_with_loading(f"📄 {text_output_file}")
-        print_with_loading(f"📘 {markdown_output_file}")
+        _print_with_loading("\nDirectory structure saved to:")
+        _print_with_loading(f"📄 {text_output_file}")
+        _print_with_loading(f"📘 {markdown_output_file}")
     else:
         print("\nDirectory structure saved to:")
         print(f"📄 {text_output_file}")
@@ -208,16 +208,16 @@ def generate_markdown_table(root_dir=os.getcwd(), markdown_output_file="markdown
                 total_files += 1
 
         if animation:
-            print_with_loading("\n🌲 Markdown table generated successfully.")
-            print_with_loading(f"Total files: {total_files}", 0.02)
+            _print_with_loading("\n🌲 Markdown table generated successfully.")
+            _print_with_loading(f"Total files: {total_files}", 0.02)
         else:
             print("\n🌲 Markdown table generated successfully.")
             print(f"Total files: {total_files}")
 
     # Print the output file paths
     if animation:
-        print_with_loading("\nMarkdown table saved to:")
-        print_with_loading(f"📘 {markdown_output_file}")
+        _print_with_loading("\nMarkdown table saved to:")
+        _print_with_loading(f"📘 {markdown_output_file}")
     else:
         print("\nMarkdown table saved to:")
         print(f"📘 {markdown_output_file}")

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: DirecTracer
-Version: 1.0.6
+Version: 1.0.7
 Summary: DirecTracer is a Python script that generates a directory structure in both text and Markdown formats. It can be used to visualize the hierarchy of folders and files in a given directory, while also excluding specific folders and file extensions.
 Home-page: https://github.com/Hardvan/DirecTracer
 Author: Hardik Pawar
